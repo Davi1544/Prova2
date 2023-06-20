@@ -1,0 +1,9 @@
+drop table if exists fluxo_caixa;
+create table fluxo_caixa(
+	id int not null primary key auto_increment,
+    data date not null,
+    tipo varchar(10) not null,
+	valor decimal(10,2),
+    historico varchar(150),
+    cheque varchar(3)
+);
